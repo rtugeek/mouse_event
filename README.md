@@ -1,6 +1,6 @@
 # mouse_event
 
-![ScreenRecording](screenshot.gif)
+![ScreenRecording](screenshot.png)
 
 Flutter Plugin for Windows to catch **ALL** mouse events, even if you are using other programs;
 
