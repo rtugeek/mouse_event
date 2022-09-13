@@ -1,6 +1,6 @@
 name: mouse_event
 description: Mouse event plugin for Flutter Desktop(Windows)
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/rtugeek/mouse_event
 repository: https://github.com/rtugeek/mouse_event
 issue_tracker: https://github.com/rtugeek/mouse_event/issues

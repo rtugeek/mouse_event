@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:logger/logger.dart';
 import 'mouse_event_struct.dart';
 
-typedef Listener = void Function(MouseEvent keyEvent);
+typedef Listener = void Function(MouseEvent mouseEvent);
 typedef CancelListening = void Function();
 
 Logger log = Logger();

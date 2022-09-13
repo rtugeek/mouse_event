@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 class MouseEvent {
   late MouseEventMsg mouseMsg;
   late int mouseData;
@@ -15,6 +17,10 @@ class MouseEvent {
     dwExtraInfo = list[4];
     x = list[5];
     y = list[6];
+  }
+
+  Offset getOffset(){
+    return Offset(x.toDouble(), y.toDouble());
   }
 
 
