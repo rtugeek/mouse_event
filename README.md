@@ -21,3 +21,7 @@ MouseEventPlugin.startListening((mouseEvent) {
 // stop listening
 MouseEventPlugin.cancelListening();
 ```
+
+## Link
+If you want to catch keyboard event, check this repository out  
+[Keyboard Event](https://github.com/Krysl/keyboard_event)
