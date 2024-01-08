@@ -76,6 +76,12 @@ inline int wp2keyMsg(WPARAM wp) {
     case WM_MOUSEWHEEL:
       mouseMsg = 41;
       break;
+    case WM_XBUTTONDOWN:
+      mouseMsg = 50;
+      break;
+    case WM_XBUTTONUP:
+      mouseMsg = 51;
+      break;
     default:
       mouseMsg = -1;
       break;
