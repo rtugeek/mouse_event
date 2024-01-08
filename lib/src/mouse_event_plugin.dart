@@ -26,12 +26,12 @@ class MouseEventPlugin {
   static CancelListening? _cancelListening;
 
   static Future<void> startListening(Listener listener) async {
-    var subscription =
+    final subscription =
         _eventChannel.receiveBroadcastStream(nextListenerId++).listen(//listener
             (dynamic msg) {
-      var list = List<int>.from(msg);
-      var mouseEvent = MouseEvent(list);
-      listener(mouseEvent);
+      final list = List<int>.from(msg);
+      final mouseEvent = MouseEvent(list);
+        listener(mouseEvent);
     }, cancelOnError: true);
     debugPrint('mouse_event/event startListening');
     _cancelListening = () {
