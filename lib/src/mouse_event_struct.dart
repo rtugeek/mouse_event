@@ -106,6 +106,12 @@ MouseEventMsg toKeyEventMsg(int v) {
     case 41:
       mouseMsg = MouseEventMsg.WM_MOUSEWHEEL;
       break;
+    case 50:
+      mouseMsg = MouseEventMsg.WM_XBUTTONDOWN;
+      break;
+    case 51:
+      mouseMsg = MouseEventMsg.WM_XBUTTONUP;
+      break;
     default:
       mouseMsg = MouseEventMsg.WM_UNKNOWN;
       break;

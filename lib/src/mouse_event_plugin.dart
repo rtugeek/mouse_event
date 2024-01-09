@@ -3,13 +3,10 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'package:logger/logger.dart';
 import 'mouse_event_struct.dart';
 
 typedef Listener = void Function(MouseEvent mouseEvent);
 typedef CancelListening = void Function();
-
-Logger log = Logger();
 
 class MouseEventPlugin {
   static const MethodChannel _channel = MethodChannel('mouse_event');
@@ -26,11 +23,11 @@ class MouseEventPlugin {
   static CancelListening? _cancelListening;
 
   static Future<void> startListening(Listener listener) async {
-    var subscription =
+    final subscription =
         _eventChannel.receiveBroadcastStream(nextListenerId++).listen(//listener
             (dynamic msg) {
-      var list = List<int>.from(msg);
-      var mouseEvent = MouseEvent(list);
+      final list = List<int>.from(msg);
+      final mouseEvent = MouseEvent(list);
       listener(mouseEvent);
     }, cancelOnError: true);
     debugPrint('mouse_event/event startListening');
