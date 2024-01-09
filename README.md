@@ -25,3 +25,11 @@ MouseEventPlugin.cancelListening();
 ## Link
 If you want to catch keyboard event, check this repository out  
 [Keyboard Event](https://github.com/Krysl/keyboard_event)
+
+
+## Dart Publish Command
+```shell
+# Windows PowerShell
+$Env:https_proxy="127.0.0.1:7890" 
+dart pub publish --server=https://pub.dartlang.org
+```
