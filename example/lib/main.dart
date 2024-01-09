@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
                       Text('运行于: $_platformVersion'),
                       Row(
                         children: [
-                          const Text('点击按钮切换键盘监听: '),
+                          const Text('点击按钮切换鼠标监听: '),
                           Switch(
                             value: listenIsOn,
                             onChanged: (bool newValue) {
